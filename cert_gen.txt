@@ -1,0 +1,3 @@
+keytool -genkey -alias p335 -keyalg RSA -keypass changeit -storepass changeit -keystore sap.jks
+keytool -export -alias p335 -storepass changeit -file p335.cer -keystore sap.jks
+keytool -list -v -keystore sap.jks > list.txt
